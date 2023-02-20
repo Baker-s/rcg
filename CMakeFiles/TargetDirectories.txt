@@ -1,0 +1,7 @@
+/home/nikolay/rcg/CMakeFiles/rcg.dir
+/home/nikolay/rcg/CMakeFiles/edit_cache.dir
+/home/nikolay/rcg/CMakeFiles/rebuild_cache.dir
+/home/nikolay/rcg/CMakeFiles/list_install_components.dir
+/home/nikolay/rcg/CMakeFiles/install.dir
+/home/nikolay/rcg/CMakeFiles/install/local.dir
+/home/nikolay/rcg/CMakeFiles/install/strip.dir
