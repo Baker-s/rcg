@@ -10,6 +10,11 @@ int main() {
     //VideoCapture cap("rtsp://externaluser:1kL6H7sj06bbhD2@31.146.131.74:554/Streaming/Channels/1401/?transportmode=unicast"); //3
 
     cv::dnn::Net net = cv::dnn::readNetFromDarknet("dnn_model/yolov4-tiny.cfg","dnn_model/yolov4-tiny.weights");
+
+    // Working on gpu
+    // net.setPreferableBackend(DNN_BACKEND_CUDA);
+    // net.setPreferableTarget(DNN_TARGET_CUDA);
+
     cv::dnn::DetectionModel model(net);
     model.setInputParams((double)1/255, cv::Size(320, 320), Scalar());
 
