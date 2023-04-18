@@ -1,11 +1,17 @@
 #include <opencv4/opencv2/opencv.hpp>
+#include <iostream>
 
 using namespace cv;
 
-int main() {
-    //Working person detection in laptop camera
-    //VideoCapture cap(0);
-    VideoCapture cap("rtsp://externaluser:1kL6H7sj06bbhD2@188.169.66.2:554/Streaming/Channels/2001/?transportmode=unicast"); //1
+int main(int argc, char** argv) {
+    if (argv[1] != NULL) {
+        cerr << "ERROR: rcg <STREAM URL>\n";
+        exit(1);
+    }
+    
+    std::string stream = argv[1]
+    
+    VideoCapture cap(stream);
     //VideoCapture cap("rtsp://externaluser:1kL6H7sj06bbhD2@31.146.183.134:654/Streaming/Channels/801/?transportmode=unicast"); //2
     //VideoCapture cap("rtsp://externaluser:1kL6H7sj06bbhD2@31.146.131.74:554/Streaming/Channels/1401/?transportmode=unicast"); //3
 
